@@ -47,17 +47,17 @@ const Component1 = () => {
         },"sath")
     })
     return (
-        <div className="grid grid-cols-4 gap-4 comp1 overflow-hidden">
+        <div className="grid grid-cols-4 max-md:grid-cols-1 gap-4 comp1 overflow-hidden">
             <div className="col-span-1 overflow-hidden box1 bg-neutral-700 rounded-xl bg-cover">
                 <img 
                     className='h-full w-full object-cover'
                     src='https://images.unsplash.com/photo-1591602671941-b5d9f9efde79?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' 
                 />
             </div>
-            <div className="col-span-1 box2 bg-neutral-400 rounded-xl flex justify-center items-center">
+            <div className="col-span-1 max-md:hidden box2 bg-neutral-400 rounded-xl flex justify-center items-center">
                 <div className="h-[80%] w-4 bg-black b1 rounded-xl"></div>
             </div>
-            <div className="col-span-2 box3 bg-neutral-500 rounded-xl flex flex-row items-center gap-10">
+            <div className="col-span-2 box3 max-md:hidden bg-neutral-500 rounded-xl flex flex-row items-center gap-10">
                 <div className="text-[4rem] b1 font-bold font-sans tracking-[-5px] leading-[3rem] uppercase flex flex-col pl-8 justify-center ">
                     ORDER <br />
                     <span className='tracking-[5px]'>

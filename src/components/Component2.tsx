@@ -62,9 +62,9 @@ const Component2 = () => {
         })
     })
   return (
-    <div className="grid grid-cols-3 gap-4 h-full comp2 w-full">
+    <div className="grid grid-cols-3 max-md:grid-cols-2 gap-4 h-full comp2 w-full">
         <div ref={box1} className="col-span-1 box1 overflow-hidden bg-neutral-800 rounded-xl bg-cover flex flex-col justify-center items-center">
-            <div className="b1 uppercase text-[6rem] leading-[6rem] h-fit font-bold text-gray-400">
+            <div className="b1 uppercase text-[3rem] md:text-[6rem] leading-[6rem] h-fit font-bold text-gray-400">
                 AA.
             </div>
             <div className="b2 text-[2rem] pr-4 font-semibold text-gray-500">
@@ -78,7 +78,7 @@ const Component2 = () => {
                 src='https://images.unsplash.com/photo-1690306734146-1a985c655e90?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' 
             />
         </div>
-        <div ref={box3} className="col-span-1 box3 relative overflow-hidden bg-neutral-500 rounded-xl">
+        <div ref={box3} className="col-span-1 max-md:hidden box3 relative overflow-hidden bg-neutral-500 rounded-xl">
             <img 
                 className="w-[20vw] h-[60vh] object-cover -top-36 right-0 absolute b1"
                 style={{ filter: 'drop-shadow(0 0 0 white) drop-shadow(-20px 10px 10px rgb(63 63 70))' }}
